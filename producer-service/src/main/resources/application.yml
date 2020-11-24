@@ -1,0 +1,22 @@
+# Spring properties
+
+spring:
+  application:
+    name: producer-service
+    
+    
+# Eureka properties
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+# 
+
+server:
+  error:
+    whitelabel:
+      enabled: false      
+  port: 8081
+      
