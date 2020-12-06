@@ -1,0 +1,8 @@
+package com.kdr;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ExcahngeRepository extends JpaRepository<ExchangeValue, Long>{
+
+	ExchangeValue findByFromAndTo(String from, String to);
+}
